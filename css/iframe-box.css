@@ -1,0 +1,60 @@
+/* ===== Фон для затемнения ============*/
+.popup-viideo {
+  /* Скрываем по умолчанию */
+  width: 80%;
+  height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  overflow: hidden;
+  transition: 1s;
+  & .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 1em;
+    aspect-ratio: 1;
+    line-height: 0.2em;
+    font-size: 3.2em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: red;
+    }
+  }
+}
+.popup-viideo.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  & .close-btn,
+  & .iframe-box {
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition-delay: 1s;
+  }
+}
+
+.iframe-box {
+  position: absolute;
+  width: 60vw;
+  aspect-ratio: 1.78;
+  border-radius: 10px;
+  z-index: 999;
+  border: none;
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), 4px 6px 6px rgba(0, 0, 0, 0.7); */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,499 @@
+/* сайт, оптимизированный для мобильных */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --border-gradient: linear-gradient(0deg, transparent, var(--color-text), var(--color-text));
+  --color1-animation: #9e7923e6; /* #ff2770f0; */
+  --color2-animation: #ff45dfdb; /* #45f3fff0; */
+  --time-animation: 8s;
+  /* --text-gradient: linear-gradient(0deg, red, yellow, red, yellow, red); */
+  --scale-video: 2;
+
+  /* --gradient-background-fon: radial-gradient(circle 150vh at top left, transparent, rgba(226, 2, 203, 0.2));
+  --backdrop-filter-blur: 4px;
+  --url-background-fon: url("../img/menora_redfon.jpg"); */
+  /* ---- contact ------------ */
+  /* --color-glass: #b6946e;
+  --color-glass1: #761d76;
+  --color-glass1: #a937de;
+  --bg-glass: 193, 158, 44; */
+  /*----------- slider 40px;-----------------------*/
+  --sliderSize: clamp(1.8em, calc(0.61em + 2.46vw), 2.97em);
+  --sliderFontSize: clamp(0.94em, calc(0.54em + 0.82vw), 1.33em);
+  --sliderTransform: calc(-1 * var(--sliderSize) / 2); /* -20px; */
+  --sliderColor: rgba(240, 240, 240, 0.7);
+  --width-box-wrape: 30vw;
+}
+
+/* .container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+} */
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .content {
+  width: min(var(--max-width), 100% - (var(--container-padding-x) * 2));
+} */
+
+.logo {
+  opacity: 0.8;
+  aspect-ratio: 1;
+  width: clamp(120px, 12.1vw, 140px);
+  filter: invert(100%);
+  mix-blend-mode: screen;
+}
+
+/* TODO:  "banner"  */
+
+.banner {
+  position: relative;
+  /* z-index: 1; */
+  padding-top: 60px;
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(rgb(24 21 21 / 68%), #25151594), center / cover no-repeat url(../img/maska_1_854x480.gif);
+   &::before {
+    --backdrop-filter-blur: 2px;
+  } */
+}
+.banner-title {
+  width: 100%;
+  margin: 20px auto 10px;
+  line-height: 1;
+  font-family: var(--font-title);
+  font-size: clamp(56px, 12.1vw, 140px);
+  letter-spacing: 0.2em;
+  pointer-events: none;
+  background: linear-gradient(45deg, red, yellow, red, yellow, red);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  background-size: 150% 150%;
+  /* animation: backInDown 9s cubic-bezier(0.4, 0, 0.01, 0.99) forwards,
+    gradientShift 10s linear infinite; */
+}
+
+.video-buttons {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  /* &:nth-child(1) .image-container {
+    background-image: url("../img/image_hello.jpg");
+  }
+  &:nth-child(2) .image-container {
+    background-image: url("../img/teater-актёры.jpg");
+  } */
+  /* animation: animateScale 9s ease-in-out forwards; */
+  /* animation: animateScale 10s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards; */
+}
+/* ========  animation =========*/
+@keyframes animateScale {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* @keyframes animateTitle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+} */
+@keyframes scaleTeatre {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.3;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes backInDown {
+  0% {
+    transform: translateY(-600px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*! ".video-button" ==========*/
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes rotating {
+  to {
+    --a: 360deg;
+  }
+}
+.video-button {
+  position: relative;
+  height: 190px;
+  aspect-ratio: 1.78;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  filter: drop-shadow(0 5px 10px #000);
+  /** Применяем фильтр ТОЛЬКО к градиентам */
+  /** filter: drop-shadow(0 10px 20px #000); */
+  /** filter: drop-shadow(0 15px 50px #000) hue-rotate(310deg); */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.7); */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+  }
+  &::before {
+    background: repeating-conic-gradient(
+      from calc(var(--a) + 50deg),
+      var(--color1-animation) 0%,
+      var(--color1-animation) 5%,
+      transparent 5%,
+      transparent 40%,
+      var(--color1-animation) 50%
+    );
+    animation: rotating var(--time-animation) linear infinite;
+    /* animation-play-state: paused; */
+  }
+  &::after {
+    background: repeating-conic-gradient(
+      from calc(var(--a) + 50deg),
+      var(--color2-animation) 0%,
+      var(--color2-animation) 5%,
+      transparent 5%,
+      transparent 40%,
+      var(--color2-animation) 50%
+    );
+    animation: rotating var(--time-animation) linear infinite;
+    animation-delay: calc(var(--time-animation) / 4);
+    /* animation-play-state: paused; */
+  }
+
+  & .image-container {
+    position: absolute;
+    inset: 2px; /** Отступы */
+    background: transparent;
+    background-size: cover; /** Заполняет контейнер без искажений */
+    background-position: center; /** Центрирует изображение */
+    background-repeat: no-repeat; /** Убирает повторение */
+    border-radius: 15px;
+    z-index: 1; /** Размещаем выше градиентов */
+  }
+
+  /* &:hover, */
+  &:hover::before,
+  &:hover::after {
+    animation-play-state: running;
+  }
+
+  & :is(h4, span) {
+    position: absolute;
+    font-family: var(--font-text);
+    bottom: 10px;
+    font-weight: 700;
+    color: #eda86c;
+    writing-mode: vertical-rl; /** Вертикальный текст, сверху вниз */
+    text-orientation: upright; /** Выравнивание букв вертикально */
+    z-index: 10;
+  }
+  & h4 {
+    right: 7px;
+    font-size: 0.75em;
+  }
+  & span {
+    left: 7px;
+    font-size: 0.95em;
+  }
+
+  &:hover {
+    /* scale: 1.1; */
+    cursor: pointer;
+  }
+} /* ========== /.video-button */
+.video-buttons .btn-container:nth-child(1) .image-container {
+  background-image: url("../img/image_hello.jpg");
+}
+.video-buttons .btn-container:nth-child(2) .image-container {
+  background-image: url("../img/teater-актёры.jpg");
+}
+.video-buttons .btn-container:nth-child(2) .video-button::after,
+.video-buttons .btn-container:nth-child(2) .video-button::before {
+  filter: hue-rotate(310deg);
+}
+/*TODO: ".about" ======================================== */
+/* ! Pinterest layout style */
+.foto-gallery {
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  column-width: 300px; /** Браузер подберет оптимальное число колонок */
+  column-gap: 20px;
+  & .foto-box {
+    max-width: 400px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    & img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+/*TODO: ".testimonials" ======================================== */
+.testimonials {
+  min-height: 100vh;
+}
+.testimonials .content {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  & .box-wrape {
+    --width-box-wrape: 30vw;
+  }
+}
+/* TODO:  "contact" ========================================== */
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: var(--gradient-background-fon), bottom/cover no-repeat url(../img/menora_maskfon.jpg); */
+    background: bottom / cover no-repeat url(../img/menora_maskfon.jpg), linear-gradient(135deg, #55031f, #0c124e);
+    background-blend-mode: soft-light;
+    filter: drop-shadow(0px -16px 15px #0e0314);
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+.contact .container {
+  max-width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  text-align: start;
+  gap: 20px;
+  margin-top: 0px;
+  font-family: var(--font-text);
+  font-style: italic;
+  & .contact__info {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+    & .box {
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      &:nth-child(2) .water-btn:hover {
+        transform: translateY(0px);
+        & a {
+          pointer-events: none;
+        }
+      }
+      & .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        & p {
+          text-indent: 0vw;
+        }
+        & h3 {
+          font-size: 1.1em;
+          color: var(--color-glass1);
+        }
+      }
+    }
+  }
+  & .contact__form {
+    padding: 10px;
+    width: 30%;
+    position: relative;
+    min-height: 340px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-conic-gradient(
+        from var(--a),
+        var(--color-glass1) 0%,
+        var(--color-glass1) 10%,
+        transparent 50%,
+        transparent 60%,
+        var(--color-glass1) 100%
+      );
+      border-radius: 20px;
+      animation: rotating 6s linear infinite;
+    }
+    & > span {
+      position: absolute;
+      inset: 5px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    & > span::before,
+    & > span::after {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      background: bottom / cover no-repeat url(../img/menora_maskfon.jpg), linear-gradient(135deg, #55031f, #0c124e);
+      background-blend-mode: soft-light;
+      /* background: url(../img/menora_maskfon.jpg), linear-gradient(135deg, #55031f, #0c124e); */
+      background-attachment: fixed;
+      /* background-size: cover;
+      background-position: bottom; */
+      filter: blur(8px);
+    }
+    & form {
+      width: 100%;
+      padding: 20px;
+      transition: 0.5s;
+    }
+    & h4 {
+      position: relative;
+      font-size: 2.8em;
+      /* white-space: nowrap; */
+      line-height: 1.2em;
+      font-weight: 500;
+      text-align: center;
+    }
+    & .input-box {
+      position: relative;
+      width: 100%;
+      margin-top: 16px;
+    }
+    & .input-box :is(input, textarea) {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 1.1em;
+      margin: 5px 0;
+      border: none;
+      background: transparent;
+      border-bottom: 2px solid var(--color-glass1);
+      outline: none;
+      color: #fff;
+      /* resize: none; */
+      resize: vertical;
+      & ~ span {
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        padding: 5px 0;
+        margin: 10px 0;
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.5);
+        transition: 0.5s;
+      }
+    }
+    & .input-box :is(input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span) {
+      color: var(--color-glass);
+      font-size: 0.9em;
+      transform: translateY(-24px);
+    }
+
+    & .water-btn:has(input[type="submit"]) {
+      width: 60%;
+      height: 45px;
+      text-align: center;
+      margin: 10px auto;
+    }
+    & .water-btn input[type="submit"] {
+      color: var(--color-glass1);
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+  }
+}
+
+.copyright-text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  text-align: center;
+  & p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  & a {
+    color: var(--color-glass1);
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+/* TODO:  @media (max-width: 991px) ============================ */
+@media (max-width: 991px) {
+  .contact .contact-form {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
+  }
+  .contact {
+    padding: 50px;
+  }
+  .contact .container {
+    flex-direction: column;
+    & .contact__info .box {
+      padding: 10px;
+    }
+    & .contact__info,
+    & .contact__form {
+      width: 100%;
+    }
+  }
+}

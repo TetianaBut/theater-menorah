@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon_ашклон.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon_ашклон.ico" type="image/x-icon" />
+    <title>Театр Драмы и Комедии им.В.Азарова г.Ашкелон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/iframe-box.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/menora.css" />
+
+    <script src="https://kit.fontawesome.com/d7f76280ff.js" crossorigin="anonymous" defer></script>
+
+    <script type="text/javascript" src="./js/iframe-box.js" defer></script>
+    <script type="text/javascript" src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!--? "progressbar" "scroll-path"-->
+    <div class="progressbar" id="progressbar"></div>
+    <div class="scroll-path"></div>
+    <!--! "iframe-box" Box с видео -->
+    <!--! "iframe-box" Box с видео -->
+    <!--! "iframe-box" Box с видео -->
+    <!-- youtube_box.css -->
+    <div class="popup-viideo">
+      <button type="button" class="close-btn">&times;</button>
+    </div>
+    <!-- TODO:"header" -->
+    <header type="header" class="header">
+      <ul class="water-btns">
+        <li class="btn-container">
+          <div class="tooltip glass" style="--dx-tooltip: 8px; --dy-tooltip: 0px">
+            <span></span> Перейти на титульную страницу
+          </div>
+          <div class="water-btn">
+            <a class="header-logo" href="#">
+              <span><img src="./img/favicon_ашклон.jpg" alt="Logo" /></span
+            ></a>
+          </div>
+        </li>
+        <li class="water-btn" style="--clr-btn: #1877f2">
+          <a href="https://www.facebook.com/menora.ashkelon" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="water-btn" style="--clr-btn: #ff0000">
+          <a href="https://www.youtube.com/channel/UCCigY9HPlR6X-NMrpkbv4jw" target="_blank">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+
+      <!-- <div class="menu-toggle" onclick="toggleMenu();"></div> -->
+      <nav class="navigation">
+        <!-- <div class="toggle-btn" onclick="toggleMenu();"></div> -->
+        <div class="btn-container">
+          <div class="tooltip glass" style="--dx-tooltip: -176px; --dy-tooltip: -5px">
+            <span></span>Открыть/закрыть меню
+          </div>
+          <div class="water-btn toggle-btn">
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="glass">
+          <li style="--clr: #1eb1de"><a href="#about" data-text="О нас">О нас</a></li>
+          <li style="--clr: #d35178">
+            <a href="./repertoire.html#repertoire" data-text="Репертуар">Репертуар</a>
+            <ul class="glass">
+              <li style="--clr: #feb47b"><a href="./repertoire.html#repertoire" data-text="Спектакли">Спектакли</a></li>
+              <li style="--clr: #feb47b">
+                <a href="./repertoire.html#children" data-text="Шоу для детей">Шоу для детей</a>
+              </li>
+            </ul>
+          </li>
+          <li style="--clr: #feb47b"><a href="./troupe.html#troupe" data-text="Труппа">Труппа</a></li>
+          <li style="--clr: #9e7923">
+            <a href="./festivals.html#festivals" data-text="Фестивали">Фестивали</a>
+          </li>
+          <li style="--clr: #ff7e5f"><a href=" #testimonials" data-text="Отзывы">Отзывы</a></li>
+          <li style="--clr: #7f7fd5"><a href=" #contact" data-text="Контакты">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-----================== <main> ============================-->
+    <!--  TODO: section "banner"   -->
+    <main class="maska">
+      <section class="banner" id="banner">
+        <img class="logo" src="./img/favicon_ашклон.jpg" alt="Menora Logo" />
+        <h1 class="banner-title">«МЕНОРА»</h1>
+        <h2 class="banner-text">Театр&nbsp; Драмы и Комедии&nbsp; им.В.Азарова&nbsp; г.Ашкелон</h2>
+        <div class="video-buttons">
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -16px; --dy-tooltip: -20px">
+              <span>⯈</span> Обращение режиссера театра
+            </div>
+            <div class="video-button">
+              <div class="image-container"></div>
+              <h4>РЕЖИССЁР</h4>
+              <span>ИРИНА ЛЕВ</span>
+            </div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -16px; --dy-tooltip: -20px">
+              <span>⯈</span> Труппа театра
+            </div>
+            <div class="video-button">
+              <div class="image-container"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  TODO: section "about" =======================================================   -->
+      <section class="about" id="about">
+        <h2 class="banner-text">О &nbsp;нас</h2>
+        <!-- <div class="troupe__hero"> -->
+        <div class="box-wrape">
+          <div class="circle circle-left">
+            <img src="./troupe/Владимир Азаров-режиссёр.jpg" alt="фото актера" />
+          </div>
+          <h3>Владимир Яковлевич Азаров - создатель и режиссер театра 1991-2018гг.</h3>
+          <p>
+            <br />
+            Добрый день , дорогие друзья ! Театр драмы и комедии из города Ашкелон, выросший на берегу прекрасного
+            Средиземного моря в самой замечательной и любимой нами стране Израиль, имеет символичное называние "
+            Менора". По еврейской традиции менора - это подсвечник, в котором зажигают праздничные свечи , несущий людям
+            свет. И зажег этот светильник удивительный человек Владимир Яковлевич Азаров , создавший в 1991 году
+            самодеятельный театр , в котором играли потом его ученики, его артисты, его друзья и его птенцы...Владимир
+            Яковлевич был всем : столяром, плотником, маляром , звукооператором , актером и , конечно, режиссером. За 27
+            лет его службы Мельпомене, " Менора" показал зрителям более 25 спектаклей и, 15 утренников для детей. Долгое
+            время театр работал в крошечном бомбоубежище , куда вплотную набивались зрители. Стал гордостью Ашкелона,
+            нес в народ высокую степень культуры и интеллекта, неоднократно награждался почетными грамотами и заслужил
+            признание публики. Вниманию публики были представлены пьесы русских, израильских и зарубежных авторов : "
+            Три красавицы" ( В. Красногоров) ," Громкое имя" ( Эфраима Кешона) , "Восемь любящих женщин ( Робера Тома )
+            и многие другие. Родители и дети спешили на все детские утренники , которые предлагал им театр : "
+            Новогоднюю сказку" , Волшебное слово " , " Баба Яга против" ... всех не перечесть... выступления проходили
+            как и в родном Ашкелоне , так и в других городах страны : Бат Яме , Нетании , Петах Тикве , Офаким и др. Со
+            временем город взял над театром шефство . Первая заместитель мэра .г. Софа Бейлин добилась для театра
+            постоянного места в Бейт А-Ам.(Здание старенькое , но - настоящий театр : со сценой и занавесом), а потом и
+            статуса " Ашкелонский Городской драматический театр " Менора" .
+          </p>
+
+          <!-- </div> -->
+
+          <!-- <div class="box-wrape"> -->
+          <div class="circle circle-right">
+            <img src="./troupe/_Люба  Дворкин-Админдиректор.jpg" alt="фото актера" />
+          </div>
+          <!-- <h3>Люба Дворкин-Админдиректор</h3> -->
+          <p>
+            У Владимира Яковлевича, создателя и хранителя света " МЕНОРЫ", были в жизни две страсти :семья ,любовь всей
+            его жизни , и ...Театр.Профессиональный военный, связист, майор авиационных войск, заведующий Домом
+            офицеров, организатор гарнизонного театрального кружка... Хоби - фотография и Театр. "Менора" зажженная им в
+            городе Ашкелон стала апогеем всей его жизни. В 2018 году по просьбе артистов театру было присвоено его
+            славное имя: Ашкелонский драматический театр " Менора " имени Владимира Азарова.
+          </p>
+          <p>
+            Пролетали годы. Театр жил и работал. И все эти годы рядом с Владимиром Яковлевичем были его артисты, верные
+            друзья и преданные помощники. И , главное, его правая рука ,фундамент , опора и поддержка , артистка и по
+            совместительству <strong>директор Люба Дворкин</strong>. Представляю Вашему вниманию фотографии из архива
+            театра на которых вы можете увидеть и Владимира Яковлевича и Любу Дворкин , и сцены из спектаклей прошлых
+            лет.
+          </p>
+          <!-- </div>
+          <div class="box-wrape"> -->
+          <div class="circle circle-left">
+            <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+          </div>
+          <!-- <h3>Ирина Лев-режиссер</h3> -->
+          <p>
+            <br />
+            Меня зовут <strong>Ирина Лев-режиссер театра</strong>. Я знала Азарова почти 3 десятка лет. Мы встречались
+            на общественны мероприятиях , здоровались. интересовались новостями ... мы не были друзьями , но я всегда
+            испытывала к нему огромное уважение... И.. вот... мне выпала честь сохранить зажженую этим замечательным
+            человеком " Менору" и нести ее свет дальше. Я режиссер по образованию. Закончила Киевский театральный
+            институт по специальности режиссура драматического театра и Киевский институт культуры по специализации
+            Методика клубного дела и организации массовых праздников . Всю мою сознательную жизнь ( в том числе и в
+            Израиле! ) я работала в Клубах и Дворцах культуры... Но, признаюсь, трудно было возглавить коллектив ,
+            которым с любовью и добротой 27 лет руководил любимый всеми человек. Надеюсь ,что я справилась. Коллектив не
+            распался, а даже вырос почти в три раза. Нас уже больше сорока человек. За период с февраля 2019 года по сей
+            день театр выпустил 5 спектаклей и Новогодний мюзикл " Приключения мультяшек". У нас теперь есть странички в
+            Фейсбук и ЮТЮБ. И наши спектакли полюбились зрителю. Судить о наших работах предлагаю Вам, дорогие друзья"
+            Приятного просмотра.
+          </p>
+        </div>
+        <div class="foto-gallery">
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">facebook</div>
+            <div class="foto-box"><img src="./фото-about/facebook.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">менора и менорята</div>
+            <div class="foto-box"><img src="./фото-about/менора и менорята.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px"><span></span>нет войне</div>
+            <div class="foto-box"><img src="./фото-about/нет войне.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px"><span></span> в мире сказок</div>
+            <div class="foto-box"><img src="./фото-about/в мире сказок.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px"><span></span>на радио</div>
+            <div class="foto-box"><img src="./фото-about/мы на радио.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">
+              <span></span> отмечаем премьеру
+            </div>
+            <div class="foto-box"><img src="./фото-about/отмечаем премьеру.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px"><span></span>день театра</div>
+            <div class="foto-box"><img src="./фото-about/день театра.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px"><span></span>трудовые будни</div>
+            <div class="foto-box"><img src="./фото-about/трудовые будни.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">
+              <span></span>день рожденья только раз в году
+            </div>
+            <div class="foto-box"><img src="./фото-about/день рожденья только раз в году.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">
+              <span></span>спасибо дорогой зритель
+            </div>
+            <div class="foto-box"><img src="./фото-about/спасибо дорогой зритель.jpg" alt="foto" /></div>
+          </div>
+          <div class="btn-container">
+            <div class="tooltip glass" style="--dx-tooltip: -8px; --dy-tooltip: -20px">
+              <span></span>на 9 канале телевидения
+            </div>
+            <div class="foto-box"><img src="./фото-about/мы на 9 канале телевидения.jpg" alt="foto" /></div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- TODO:section"testimonials" ===================================================== -->
+      <section class="testimonials" id="testimonials">
+        <h2 class="banner-text">Отзывы</h2>
+        <div class="content">
+          <div class="box-wrape glass">
+            <div class="circle circle-left">
+              <img src="./img/Natali Shlagin.jpg" alt="фото Natali Shlagin" />
+            </div>
+            <h3>Natali Shlagin</h3>
+            <p>
+              Со спектаклем"Варшавская мелодия"я знакома уже очень давно. Видела его несколько раз в исполнении ведущих
+              артистов лучших театров страны. Но этот спектакль ашкелонского театра произвел на меня особое впечатление.
+              Удивила искренняя, проникновенная игра актеров, продуманность и слаженность всего хода спектакля. Тонкость
+              режиссерского замысла заставила прочувствовать сегодняшнюю. злободневную актуальность этой пьесы.
+            </p>
+          </div>
+          <div class="box-wrape glass">
+            <div class="circle circle-left">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <h3>Ирина Лев-режиссер</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem
+              placeat voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita eaLorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!!Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!
+            </p>
+          </div>
+          <div class="box-wrape glass">
+            <div class="circle circle-left">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <h3>Ирина Лев-режиссер</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem
+              placeat voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- TODO:section"contact" -->
+    <section class="contact" id="contact">
+      <h2 class="banner-text">Контакты</h2>
+      <div class="container">
+        <div class="contact__info">
+          <div class="box">
+            <!-- <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> -->
+            <div class="btn-container">
+              <div class="tooltip glass" style="--dx-tooltip: 8px; --dy-tooltip: 0px">
+                <span></span> Показать на карте
+              </div>
+              <div class="water-btn" style="--clr-btn: #a937de">
+                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <!-- <div class="water-btn" style="--clr-btn: #a937de">
+              <a href="#" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            </div> -->
+            <div class="text">
+              <h3>Адрес</h3>
+              <p>г.Ашкелон Израиль<br /></p>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.529108950923!2d34.56445839678955!3d31.674100400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15029c46d150240f%3A0x5601a717979196b7!2sHa-Nasi%201%20Pub!5e0!3m2!1sru!2ses!4v1747917292579!5m2!1sru!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+          </div>
+          <div class="box">
+            <!-- <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div> -->
+            <div class="water-btn" style="--clr-btn: #ff7e5f">
+              <a href="#" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="text">
+              <h3>Телефон</h3>
+              <p>+972 57-727-3910</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="btn-container">
+              <div class="tooltip glass" style="--dx-tooltip: 8px; --dy-tooltip: 0px">
+                <span></span> Связаться по email
+              </div>
+              <div class="water-btn" style="--clr-btn: #01dbc2">
+                <!-- <a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a> -->
+                <a href="mailto:levia60@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>levia60@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form">
+          <span></span>
+          <span></span>
+          <span></span>
+          <form action="">
+            <h4 class="banner-text">Отправить сообщение</h4>
+            <div class="input-box">
+              <input type="text" name="" required />
+              <span>Полное имя</span>
+            </div>
+            <div class="input-box">
+              <input type="email" name="" required="required" />
+              <span>Ваш Email</span>
+            </div>
+            <div class="input-box">
+              <textarea name="" id="" required="required"></textarea>
+              <span>Текст сообщения</span>
+            </div>
+            <!-- <div class="input-box">
+                  <input type="submit" value="Отправить">
+               </div> -->
+            <div class="water-btn" style="--clr-btn: #ff7e5f">
+              <input type="submit" value="Отправить" />
+              <!-- <a href="#" target="_blank"><input type="submit" value="Отправить"></a> -->
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright-text">
+        <p>Copyright text 2025 <a href="#">Tetiana</a></p>
+      </div>
+    </section>
+    <!-- ! Открытие видео "adressMap" -->
+    <script type="text/javascript">
+      const contactInfo = document.querySelectorAll(".contact__info .water-btn");
+      contactInfo[0].addEventListener("click", function (event) {
+        event.preventDefault();
+        openViideoBox("", 1);
+      });
+    </script>
+  </body>
+</html>

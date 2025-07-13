@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon_ашклон.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon_ашклон.ico" type="image/x-icon" />
+    <title>Труппа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/troupe.css" />
+
+    <script src="https://kit.fontawesome.com/d7f76280ff.js" crossorigin="anonymous" defer></script>
+
+    <!-- <script type="text/javascript" src="./js/header.js" defer></script> -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!--?sbar" "scroll-path"-->
+    <div class="progressbar" id="progressbar"></div>
+    <div class="scroll-path"></div>
+    <!-- TODO:"header" -->
+    <header type="header" class="header">
+      <ul class="water-btns">
+        <li class="btn-container">
+          <div class="tooltip glass" style="--dx-tooltip: 8px; --dy-tooltip: 0px">
+            <span></span> Перейти на титульную страницу
+          </div>
+          <div class="water-btn">
+            <a class="header-logo" href="./index.html">
+              <span><img src="./img/favicon_ашклон.jpg" alt="Logo" /></span
+            ></a>
+          </div>
+        </li>
+        <li class="water-btn" style="--clr-btn: #1877f2">
+          <a href="https://www.facebook.com/menora.ashkelon" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="water-btn" style="--clr-btn: #ff0000">
+          <a href="https://www.youtube.com/channel/UCCigY9HPlR6X-NMrpkbv4jw" target="_blank">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+
+      <!-- <div class="menu-toggle" onclick="toggleMenu();"></div> -->
+      <nav class="navigation">
+        <!-- <div class="toggle-btn" onclick="toggleMenu();"></div> -->
+        <div class="btn-container">
+          <div class="tooltip glass" style="--dx-tooltip: -176px; --dy-tooltip: -5px">
+            <span></span>Открыть/закрыть меню
+          </div>
+          <div class="water-btn toggle-btn">
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="glass">
+          <li style="--clr: #1eb1de"><a href="./index.html#about" data-text="О нас">О нас</a></li>
+          <li style="--clr: #d35178">
+            <a href="./repertoire.html#repertoire" data-text="Репертуар">Репертуар</a>
+            <ul class="glass">
+              <li style="--clr: #feb47b"><a href="./repertoire.html#repertoire" data-text="Спектакли">Спектакли</a></li>
+              <li style="--clr: #feb47b">
+                <a href="./repertoire.html#children" data-text="Шоу для детей">Шоу для детей</a>
+              </li>
+            </ul>
+          </li>
+          <li style="--clr: #feb47b"><a href="#troupe" data-text="Труппа">Труппа</a></li>
+          <li style="--clr: #9e7923">
+            <a href="./festivals.html#festivals" data-text="Фестивали">Фестивали</a>
+          </li>
+          <li style="--clr: #ff7e5f"><a href="./index.html#testimonials" data-text="Отзывы">Отзывы</a></li>
+          <li style="--clr: #7f7fd5"><a href="./index.html#contact" data-text="Контакты">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="bg-star"></div> -->
+    <main>
+      <!-- ! section"troupe" -->
+      <div class="bg-star"></div>
+      <section class="troupe" id="troupe">
+        <div class="troupe__hero">
+          <div class="box-wrape">
+            <div class="circle circle-left">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <h3>Ирина Лев-режиссер</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem
+              placeat voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!
+            </p>
+          </div>
+          <div class="box-wrape">
+            <div class="circle circle-right">
+              <img src="./troupe/_Люба  Дворкин-Админдиректор.jpg" alt="фото актера" />
+            </div>
+            <h3>Люба Дворкин-Админдиректор</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem
+              placeat voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Commodi optio corporis harum laudantium autem placeat
+              voluptates non unde laborum nam rem sapiente, officia magni amet, ipsam in est expedita ea!
+            </p>
+          </div>
+        </div>
+        <h2 class="banner-text">Наши актёры</h2>
+        <div class="content">
+          <div class="card presentation">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>София Маковкина-Левин</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque adipisci illum maiores a sunt eveniet
+                <!-- repudiandae minima ipsum quae, doloribus voluptatem corporis voluptate! Tempore doloremque modi iste
+                  debitis itaque tenetur! -->
+              </p>
+            </div>
+          </div>
+          <div class="card presentation">
+            <div class="poster">
+              <img src="./troupe/Стас Мадичинов.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Стас Мадичинов</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque adipisci illum maiores a sunt eveniet
+                repudiandae minima ipsum quae, doloribus voluptatem corporis voluptate! Tempore doloremque modi iste
+                debitis itaque tenetur!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Надя Аношин.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Надя Аношин</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Дима Малкович-художник.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Дима Малкович</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Лена МИхайлова.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лена Михайлова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Юля Финкель.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Юля Финкель</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Александр АльтерманК.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Алекс Альтерман</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/_Таня Дьяченко.jpg" alt=" фото актера" />
+            </div>
+            <div class="details">
+              <h3>Таня Дьяченко</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Боря Ерохин.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Боря Ерохин</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/_Соня Полойко.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Соня Полойко</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Егор Шаров.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Егор Шаров</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Таня Супорткина.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Таня Супорткина</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Анна Вайнберг.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Аня Вайнберг</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Оля Тарасова.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Оля Тарасова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/_Элона Ослон.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Илона Ослон</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Алла Гавриэлов.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Алла Гавриэлов</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лена Подрецкая</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Саша Лев</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Паша Шинкаренко</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Василиса Семенова.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Василиса Семенова</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <h2 class="banner-text">Наши дети</h2>
+        <div class="content">
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Маша Титиевская.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Маша Титиевская</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Натан Титиевский.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Натан Титиевский</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Марк Маковкин.jpg" alt=" фото актера" />
+            </div>
+            <div class="details">
+              <h3>Марк Маковкин</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Марийка Бобер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Марийка Бобер</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Роми Коган.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Роми Коган</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Лаэль Гавриэлов.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лаэль Гавриэлов</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Адэль Гавриэлов.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Адэль Гавриэлов</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/_Яна Макарова.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Яна Макарова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Соня Мадичинов</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Паша Жерноклив.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Паша Жерноклив</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Марк Фрадкин</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <h2 class="banner-text">ВЕТЕРАНЫ</h2>
+        <div class="content">
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Яков Клид.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Яков Клид</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Лара Кальман.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лара Кальман</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Аида Черняк.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Аида Черняк</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лиза Краковер</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Миша Норинский</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Жанна Норинская</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Наташа Шлагин</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt=" фото актера" />
+            </div>
+            <div class="details">
+              <h3>Анна Аншукова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Дима Копыловский</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Света Батурина.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Света Батурина</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Наташа Губкина</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Женя Фрадкин</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Лена Исерсон.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Лена Исерсон</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Галя Кушнеревич</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Нина Болтак</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Гриша Болтак</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Рита Петрачкова.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Рита Петрачкова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Люда Денисов.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Люда Денисова</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="poster">
+              <img src="./troupe/Ирина Лев-режиссер.jpg" alt="фото актера" />
+            </div>
+            <div class="details">
+              <h3>Люда Азарова</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      // ! Анимация мигающих звезд | CSS и Javascript
+      for (let i = 1; i <= 130; i++) {
+        let sizeStar = Math.random() * 16;
+        let boxStar = document.createElement("div");
+        boxStar.classList.add("boxStar");
+        boxStar.style.left = Math.random() * innerWidth + "px";
+        boxStar.style.top = Math.random() * innerHeight * 3 + "px";
+
+        boxStar.style.fontSize = 10 + sizeStar + "px";
+        document.querySelector(".bg-star").appendChild(boxStar);
+      }
+      function animateStar() {
+        let boxes = document.querySelectorAll(".boxStar");
+        let num = Math.floor(Math.random() * boxes.length);
+        boxes[num].classList.toggle("animate");
+      }
+      setInterval(animateStar, 25);
+    </script>
+  </body>
+</html>

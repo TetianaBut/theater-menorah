@@ -1,0 +1,162 @@
+/*! troupe ======================================== */
+.troupe .troupe__hero {
+  display: flex;
+  position: relative;
+  /* z-index: 3; */
+  /* width: 100%; */
+  /* padding: 50px; */
+  /* & h3 {
+    color: #fff;
+    font-size: 2.7em;
+    margin-bottom: 20px;
+  } */
+  /* & p {
+    color: #fff;
+    text-align: justify;
+  } */
+  /* & .circle {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 18vw;
+    aspect-ratio: 1;
+    margin: 0.4vw;
+    shape-outside: circle();
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  } */
+
+  /* & .circle.circle1 {
+    float: left;
+  }
+  & .circle.circle2 {
+    float: right;
+  } */
+}
+.troupe .content {
+  margin-bottom: 40px;
+}
+.troupe .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 2vw;
+  /* z-index: 3; */
+  & .card {
+    position: relative;
+    /* width: clamp(120px, 11vw, 150px);
+    aspect-ratio: 0.8; */
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 1.9s;
+    &.presentation {
+      cursor: pointer;
+    }
+    &.presentation:hover {
+      transform: scale(1.3);
+      z-index: 4;
+    }
+    & .poster {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    & .poster::before {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #4a021eec 60%, transparent);
+      transition: 1.9s;
+      z-index: 1;
+    }
+    &.presentation:hover .poster::before {
+      bottom: 0px;
+    }
+    & .poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.presentation:hover .poster img {
+      /* transform: translateY(-10px); */
+      filter: blur(2px);
+    }
+    & .details {
+      position: absolute;
+      width: 100%;
+      height: 160px;
+      bottom: -120px;
+      left: 0;
+      padding: 10px;
+      z-index: 2;
+      transition: 2.9s;
+
+      & h3 {
+        height: 30px;
+        padding: 4px 0;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Прикрепить текст к нижнему краю */
+      }
+      & p {
+        /* color: #fff; */
+        margin-top: 10px;
+        font-size: 0.5em;
+        font-style: italic;
+        text-indent: 0;
+      }
+    }
+    &.presentation:hover .details {
+      bottom: 0px;
+    }
+  }
+}
+/* .troupe {
+  z-index: 10;
+} */
+/* ! Анимация мигающих звезд | CSS и Javascript  */
+
+.bg-star {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* background: transparent; */
+  /* background-attachment: fixed; */
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  /* z-index: 2; */
+}
+.boxStar {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3);
+  /* width: 20px;
+  height: 20px;
+  background: #fff; */
+  transition: color 0.9s;
+  /* z-index: -1; */
+  &::before {
+    content: "\f005";
+    /** <i class="fa-solid fa-star"></i> */
+    font-family: fontAwesome;
+  }
+  &.animate {
+    color: rgba(255, 255, 0, 0.4);
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5), 0 0 25px rgba(255, 255, 0, 0.5), 0 0 55px rgba(255, 255, 0, 0.5);
+  }
+}
