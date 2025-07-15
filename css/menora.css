@@ -92,7 +92,7 @@
     background-image: url("../img/teater-актёры.jpg");
   } */
   /* animation: animateScale 9s ease-in-out forwards; */
-  animation: animateScale 8s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards;
+  /* animation: animateScale 8s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards; */
 }
 /* ========  animation =========*/
 @keyframes animateScale {
@@ -171,6 +171,7 @@
   /** filter: drop-shadow(0 10px 20px #000); */
   /** filter: drop-shadow(0 15px 50px #000) hue-rotate(310deg); */
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.7); */
+  animation: animateScale 8s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards;
   &::before,
   &::after {
     content: "";
