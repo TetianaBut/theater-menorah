@@ -281,11 +281,20 @@
   min-height: 100vh;
 }
 .testimonials .content {
+  position: relative;
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 40px;
+  gap: 2vw;
+
+  /* display: flex;
+  gap: 30px;
+  margin-top: 40px; */
   & .box-wrape {
-    --width-box-wrape: 30vw;
+    /* --width-box-wrape: 30vw; */
+    --width-box-wrape: clamp(380px, 30vw, 500px);
   }
 }
 /* TODO:  "contact" ========================================== */
