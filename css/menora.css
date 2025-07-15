@@ -294,7 +294,8 @@
   margin-top: 40px; */
   & .box-wrape {
     /* --width-box-wrape: 30vw; */
-    --width-box-wrape: clamp(380px, 30vw, 500px);
+    /* --width-box-wrape: clamp(380px, 30vw, 500px); */
+    --width-box-wrape: clamp(380px, 40vw, 420px);
   }
 }
 /* TODO:  "contact" ========================================== */
