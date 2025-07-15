@@ -213,7 +213,7 @@ function scrollBoxCurrent(event) {
   if (progressHeightCurrent > 100) {
     progressHeightCurrent = 100;
   }
-  console.log("видимая часть: ", scrollCurrent.clientHeigh, "/весь текст:  ", scrollCurrent.scrollHeight);
+  // console.log("видимая часть: ", scrollCurrent.clientHeigh, "/весь текст:  ", scrollCurrent.scrollHeight);
 
   if (scrollCurrent.clientHeight > scrollCurrent.scrollHeight) {
     progressHeightCurrent = 0;

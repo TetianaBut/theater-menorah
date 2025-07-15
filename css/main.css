@@ -154,7 +154,7 @@ p {
   top: 5px;
   left: 0px;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
   height: var(--height-header);
   display: flex;
   justify-content: space-around;
@@ -577,9 +577,12 @@ body .progressbar {
   }
 }
 /* !  "box-wrape"  */
-.troupe__hero .box-wrape,
+
 .about .box-wrape {
   --width-box-wrape: 90vw;
+}
+.troupe__hero .box-wrape {
+  --width-box-wrape: clamp(480px, 80vw, 620px);
 }
 .troupe__hero .box-wrape,
 .about .box-wrape {
