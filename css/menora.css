@@ -23,6 +23,7 @@
   --sliderTransform: calc(-1 * var(--sliderSize) / 2); /* -20px; */
   --sliderColor: rgba(240, 240, 240, 0.7);
   --width-box-wrape: 30vw;
+  --color-cli: #e7b605;
 }
 
 /* .container {
@@ -73,8 +74,7 @@
   color: rgba(0, 0, 0, 0.1);
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
   background-size: 150% 150%;
-  /* animation: backInDown 9s cubic-bezier(0.4, 0, 0.01, 0.99) forwards,
-    gradientShift 10s linear infinite; */
+  animation: backInDown 8s cubic-bezier(0.4, 0, 0.01, 0.99) forwards, gradientShift 10s linear infinite;
 }
 
 .video-buttons {
@@ -92,7 +92,7 @@
     background-image: url("../img/teater-актёры.jpg");
   } */
   /* animation: animateScale 9s ease-in-out forwards; */
-  /* animation: animateScale 10s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards; */
+  animation: animateScale 8s cubic-bezier(0.42, 0.24, 0.22, 0.82) forwards;
 }
 /* ========  animation =========*/
 @keyframes animateScale {

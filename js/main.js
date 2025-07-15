@@ -12,17 +12,17 @@ window.onscroll = function () {
   progressBar.style.height = progressHeight + "%";
 };
 // ! творческое_меню =====================
-// let text = document.querySelectorAll("nav ul li a").forEach((text) => {
-//   text.innerHTML = text.innerText
-//     .split("")
-//     .map((letters, i) => `<span>${letters}</span>`)
-//     .join("");
-//   let spn = document.querySelectorAll("nav ul li a span").forEach((e) => {
-//     let duration = Math.random() * 6;
-//     e.style.animationDuration = 0.25 + duration + "s";
-//     e.style.animationDelay = 0.25 + duration + "s";
-//   });
-// });
+let text = document.querySelectorAll("nav ul li a").forEach((text) => {
+  text.innerHTML = text.innerText
+    .split("")
+    .map((letters, i) => `<span>${letters}</span>`)
+    .join("");
+  let spn = document.querySelectorAll("nav ul li a span").forEach((e) => {
+    let duration = Math.random() * 6;
+    e.style.animationDuration = 0.25 + duration + "s";
+    e.style.animationDelay = 0.25 + duration + "s";
+  });
+});
 //TODO:  Responsive Navigation Bar =========================
 const header = document.querySelector(".header");
 const navbar = document.querySelector(".navigation");
