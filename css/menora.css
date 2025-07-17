@@ -303,6 +303,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
   z-index: 1;
   &::before {
@@ -496,6 +497,7 @@
   }
   .contact {
     padding: 50px;
+    align-items: center;
   }
   .contact .container {
     flex-direction: column;
