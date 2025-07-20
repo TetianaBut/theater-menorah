@@ -3,6 +3,13 @@
 :root {
   --name-performances: "«Рандеву»";
   /* --background-fon-children: radial-gradient(circle 150vh at top left, transparent, rgba(226, 2, 203, 0.2)); */
+  --width-item-perform: clamp(112px, 22vw, 306px);
+  /* --width-item-perform: 22vw; */
+  --right-item-perform: calc(var(--width-item-perform) / 2);
+  --left-item-perform: calc(-1 * var(--right-item-perform));
+  --right-width-perform: calc(var(--width-item-perform) - 2.5vw);
+  --left-width-perform: calc(-1 * var(--right-width-perform));
+  --width-item-child: clamp(170px, 28vw, 390px);
 }
 
 /*     ============================================================== */
@@ -48,8 +55,10 @@
   & .item {
     position: absolute;
     top: 0px;
-    left: calc(50% - 11vw);
-    width: 22vw;
+    left: calc(50% - var(--right-item-perform));
+    width: var(--width-item-perform);
+    /* left: calc(50% - 11vw);
+    width: 22vw; */
     aspect-ratio: 9 / 10; /* 9/10 */
     background: transparent;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -61,16 +70,16 @@
     opacity: 0;
   }
   & .item:nth-child(1) {
-    transform: translate3d(-20vw, 7vh, 0) scale(0.8) rotateY(30deg);
+    transform: translate3d(var(--left-width-perform), 7vh, 0) scale(0.8) rotateY(30deg);
     z-index: 1;
   }
   & .item:nth-child(2) {
-    transform: translate3d(-20vw, 7vh, 0) scale(0.8) rotateY(30deg);
+    transform: translate3d(var(--left-width-perform), 7vh, 0) scale(0.8) rotateY(30deg);
     z-index: 2;
     opacity: 1;
   }
   & .item:nth-child(3) {
-    transform: translate3d(-11vw, 9vh, 0) scale(0.9) rotateY(20deg);
+    transform: translate3d(var(--left-item-perform), 9vh, 0) scale(0.88) rotateY(24deg);
     z-index: 3;
     opacity: 1;
   }
@@ -86,17 +95,17 @@
     z-index: 12;
   }
   & .item:nth-child(5) {
-    transform: translate3d(11vw, 9vh, 0) scale(0.9) rotateY(-20deg);
+    transform: translate3d(var(--right-item-perform), 9vh, 0) scale(0.88) rotateY(-24deg);
     z-index: 3;
     opacity: 1;
   }
   & .item:nth-child(6) {
-    transform: translate3d(20vw, 7vh, 0) scale(0.8) rotateY(-30deg);
+    transform: translate3d(var(--right-width-perform), 7vh, 0) scale(0.8) rotateY(-30deg);
     z-index: 2;
     opacity: 1;
   }
   & .item:nth-child(7) {
-    transform: translate3d(20vw, 7vh, 0) scale(0.8) rotateY(30deg);
+    transform: translate3d(var(--right-width-perform), 7vh, 0) scale(0.8) rotateY(30deg);
     z-index: 1;
   }
   & .item img {
@@ -120,8 +129,9 @@
   left: 0;
   & .item {
     position: absolute;
-    width: 28vw;
-    min-width: 170px;
+    /* width: 28vw; */
+    /* min-width: 170px; */
+    width: var(--width-item-child);
     aspect-ratio: 3/2;
     /* --opacity-bgmain: 1; */
     background: var(--img);
@@ -329,11 +339,13 @@
   }
 }
 @media (max-width: 780px) {
-  .repertoire {
-    height: 200vh;
+  section.repertoire {
+    /* min-height: 200vh; */
+    height: auto;
+    padding: 40px 10px 10px;
   }
   .repertoire article {
-    padding: 20px;
+    padding: 10px;
     /* margin-top: 20px; */
   }
   .fabula {
