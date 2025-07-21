@@ -625,14 +625,14 @@ body .progressbar {
 /* !  "box-wrape"  */
 
 .about .box-wrape {
-  --width-box-wrape: 90vw;
+  --width-box-wrape: 96vw;
 }
 .troupe__hero .box-wrape {
   --width-box-wrape: clamp(480px, 80vw, 620px);
 }
 .troupe__hero .box-wrape,
 .about .box-wrape {
-  --width-circle: 200px;
+  --width-circle: 160px;
 }
 .testimonials .box-wrape {
   --width-circle: 100px;
@@ -643,7 +643,7 @@ body .progressbar {
 }
 .box-wrape {
   width: var(--width-box-wrape);
-  padding: 30px;
+  padding: 20px;
   margin: 0px auto;
   & .circle {
     width: var(--width-circle);
@@ -703,5 +703,22 @@ body .progressbar {
   }
   50% {
     filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 420px) {
+  .about .box-wrape {
+    --width-circle: 150px;
+    & .circle {
+      margin-top: 57px;
+      margin-bottom: 10px;
+    }
+    & .circle-left {
+      float: left;
+      margin-inline: 0px 10px;
+    }
+    & .circle-right {
+      float: right;
+      margin-inline: 10px 0px;
+    }
   }
 }

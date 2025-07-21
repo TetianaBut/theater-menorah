@@ -69,6 +69,9 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002);
     opacity: 0;
   }
+  & .item::before {
+    white-space: nowrap;
+  }
   & .item:nth-child(1) {
     transform: translate3d(var(--left-width-perform), 7vh, 0) scale(0.8) rotateY(30deg);
     z-index: 1;
@@ -129,8 +132,6 @@
   left: 0;
   & .item {
     position: absolute;
-    /* width: 28vw; */
-    /* min-width: 170px; */
     width: var(--width-item-child);
     aspect-ratio: 3/2;
     /* --opacity-bgmain: 1; */
@@ -179,12 +180,12 @@
 }
 
 .item::before {
+  width: 58vw;
   display: flex;
-  padding-inline: 30px;
+  padding-left: 30px;
   content: var(--name-performances);
   position: absolute;
   transition: 1.1s ease-in-out;
-  white-space: nowrap;
   transform: translate3d(-50px, -185px, 0) rotate(0deg);
   opacity: 0;
   letter-spacing: -1px;
@@ -198,9 +199,8 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  /* -webkit-text-stroke: 2px #000; */
-  /* background-size: 300% 300%; */
-  /* animation: gradientShift 8s linear infinite; */
+  background-size: 150% 150%;
+  animation: gradientShift 10s linear infinite;
 }
 /* TODO: ".fabula" =========================================== */
 .fabula {
@@ -344,49 +344,62 @@
     height: auto;
     padding: 40px 10px 10px;
   }
-  .repertoire article {
+  .repertoire article.performances,
+  .repertoire article.children {
     padding: 10px;
-    /* margin-top: 20px; */
+    height: auto;
   }
   .fabula {
     padding-top: 10px;
   }
   .repertoire .content {
     display: flex;
-    /* height: 82vh; */
     flex-direction: column;
     align-items: center;
-    /* align-content: center; */
     justify-content: space-between;
+    /* align-content: center; */
     /* margin-top: 0vh; */
   }
   .performances .content {
     margin-top: 0vh;
-    height: 80vh;
+    height: 90vh;
     & .fabula {
-      height: 50vh;
+      height: 48vh;
     }
   }
   .children .content {
-    height: 88vh;
+    height: 94vh;
     margin-top: 4vh;
     & .fabula {
-      height: 40vh;
+      height: 39vh;
     }
   }
 
   .fabula {
     width: 90vw;
-    /* height: 40vh; */
     order: 1;
   }
+  .performances__slider,
   .children__slider {
     width: 90vw;
     height: 25vh;
-  }
-  .performances__slider {
-    width: 90vw;
-    height: 25vh;
     order: 0;
+  }
+  /* .performances__slider {
+    order: 0;
+  } */
+}
+@media (max-width: 420px) {
+  .performances .content {
+    height: 82vh;
+    & .fabula {
+      height: 54vh;
+    }
+  }
+  .children .content {
+    height: 90vh;
+    & .fabula {
+      height: 42vh;
+    }
   }
 }
