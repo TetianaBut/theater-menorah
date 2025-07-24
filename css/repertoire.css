@@ -70,7 +70,8 @@
     opacity: 0;
   }
   & .item::before {
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    width: 50vw;
   }
   & .item:nth-child(1) {
     transform: translate3d(var(--left-width-perform), 7vh, 0) scale(0.8) rotateY(30deg);
@@ -92,7 +93,7 @@
     opacity: 1;
   }
   & .item:nth-child(4)::before {
-    transform: translate3d(-10vw, -10vh, 0) rotate(0deg) scale(1.32);
+    transform: translate3d(-14vw, -10vh, 0) rotate(0deg) scale(1.32);
     opacity: 1;
     /* scale: 0.7; */
     z-index: 12;
