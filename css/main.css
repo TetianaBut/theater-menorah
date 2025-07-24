@@ -103,30 +103,33 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 20px;
+  left: 20px;
   /* padding: 8px; */
-  text-align: center;
+  text-align: start;
   z-index: 1;
 }
 .logo-tbut {
   font-family: var(--font-logo);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
   text-shadow: var(--text-shadow);
-  color: var(--branding-color);
+  /* color: var(--branding-color); */
+  color: var(--color-glass1);
   text-decoration: none;
   text-transform: capitalize;
   padding: 1px 16px;
   background: transparent;
   border-radius: 40px 15px;
-  border: 4px double var(--branding-color);
+  /* border: 4px double var(--branding-color); */
+  border: 4px double var(--color-glass1);
   transition: all 400ms ease-in-out;
   cursor: pointer;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: white !important;
-  background: var(--branding-color);
+  background: var(--color-glass1);
 }
 /* TODO:Перемещение текста всплывающей подсказки  */
 .btn-container:has(> .tooltip) {
