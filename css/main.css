@@ -697,13 +697,10 @@ body .progressbar {
   & strong {
     font: italic 1.3em sans-serif;
     color: #fd6a01;
-    /* font-weight: 600; */
-    /* font-size: 1.3em; */
   }
   & p strong {
     color: #fd0116;
     font-weight: 600;
-    font-size: 1.3em;
   }
   ul {
     margin: 10px 3vw;
