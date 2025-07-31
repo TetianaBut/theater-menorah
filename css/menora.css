@@ -281,21 +281,22 @@
   min-height: 100vh;
 }
 .testimonials .content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  gap: 2vw;
-
-  /* display: flex;
-  gap: 30px;
-  margin-top: 40px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* width: 100%;
+  max-width: 1200px;
+  margin: auto; */
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  & .box-wrape:nth-child(1) {
+    grid-row: 1 / span 2; /* Занимает две строки — весь левый столбец */
+  }
   & .box-wrape {
-    /* --width-box-wrape: 30vw; */
+    --width-box-wrape: 100%;
+    break-inside: avoid;
     /* --width-box-wrape: clamp(380px, 30vw, 500px); */
-    --width-box-wrape: clamp(380px, 40vw, 420px);
+    /* --width-box-wrape: clamp(380px, 40vw, 420px); */
   }
 }
 /* TODO:  "contact" ========================================== */
@@ -507,6 +508,15 @@
     & .contact__info,
     & .contact__form {
       width: 100%;
+    }
+  }
+}
+/* TODO:  @media (max-width: 600px) ============================ */
+@media (max-width: 600px) {
+  .testimonials .content {
+    grid-template-columns: 1fr;
+    & .box-wrape:nth-child(1) {
+      grid-row: auto; /* сбрасываем растяжение */
     }
   }
 }
