@@ -200,7 +200,7 @@ btnsChildren[2].addEventListener("click", function (event) {
   displayChildren();
 });
 
-//TODO: ======= scrolling ----> fabulaChildren.onscroll =====================
+//! ======= scrolling ----> fabulaChildren.onscroll =====================
 //* scrollCurrent.clientHeight - видимая часть
 //* scrollCurrent.scrollHeight -/весь текст
 //* scrollCurrent.scrollTop - высота scrolling текста сверху

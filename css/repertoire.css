@@ -219,7 +219,7 @@
   z-index: 15;
   opacity: 1;
 }
-/*TODO: scroll__content scrolling --- overflow-y: auto;===========*/
+/*! scroll__content scrolling --- overflow-y: auto;===========*/
 .scroll__content {
   position: relative;
   overflow: hidden;
@@ -302,6 +302,7 @@
     color: rgb(102, 37, 152);
     /* color: #15122a; */
     font-size: 24px;
+    font-weight: 600;
   }
   &:hover span {
     color: red;

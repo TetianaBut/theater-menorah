@@ -3,8 +3,27 @@
 //* window.innerHeight  - видимая часть
 //* window.pageYOffset - высота scrolling текста сверху
 const progressBar = document.getElementById("progressbar");
+// window.onscroll = function () {
+//   const totalHeight = document.body.scrollHeight - window.innerHeight;
+//   let progressHeight = (window.pageYOffset / totalHeight) * 100;
+//   if (progressHeight < 1.3) {
+//     progressHeight = 1.3;
+//   }
+//   progressBar.style.height = progressHeight + "%";
+// };
+console.log("весь текст: ", document.body.scrollHeight, "видимая часть", window.innerHeight, " + ", window.pageYOffset);
 window.onscroll = function () {
+  // console.log("progressBar: ", progressBar);
   const totalHeight = document.body.scrollHeight - window.innerHeight;
+  console.log(
+    "весь текст: ",
+    document.body.scrollHeight,
+    "видимая часть",
+    window.innerHeight,
+    " + ",
+    window.pageYOffset
+  );
+  console.log("totalHeight: ", document.body.scrollHeight, " - ", window.innerHeight);
   let progressHeight = (window.pageYOffset / totalHeight) * 100;
   if (progressHeight < 1.3) {
     progressHeight = 1.3;

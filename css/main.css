@@ -3,6 +3,7 @@
 :root {
   --container-width: 1280px;
   --container-padding-x: 15px;
+  --transition: 0.5s;
 
   --font-text-nav: "Great Vibes", serif;
   --font-title: "Pattaya", serif; /* "Pattaya" "Pacifico"*/
